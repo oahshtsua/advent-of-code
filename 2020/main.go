@@ -1,6 +1,7 @@
 package main
 
 import (
+	"aoc-2020/day01"
 	"flag"
 	"fmt"
 )
@@ -12,6 +13,8 @@ func main() {
 	flag.Parse()
 
 	switch day {
+	case 1:
+		day01.Solution()
 	default:
 		fmt.Println("Usage: go run main.go -day=n")
 	}
